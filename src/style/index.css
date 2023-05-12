@@ -1,0 +1,107 @@
+@import url(./reset.css);
+
+
+.container {
+    width: min(100% - 30px, 1280px);
+    margin-inline: auto;
+}
+
+:root {
+    --app-dark-bg: #1a1d28;
+    --app-green: #33ab4e;
+    --app-purple: #833cff;
+    --app-orange: #ff833c;
+    --app-blue: #3c57ff;
+    --app-blue-hover: #364ee6;
+    --app-red: #ff3c57;
+    --app-light-gray: #f9f9f9;
+    --app--purple: #7339ac;
+    --app-white:#fff;
+    --app-lightgrey: #9a9a9a ;
+    --app-black:#000 ;
+}
+
+body {
+    background-color:var(--app-dark-bg);
+}
+
+/*-------------------StarRating--------------------*/
+
+.star-container {
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+}
+  
+.star-container h2 {
+    margin-left: 10px;
+    color: var(--app-white);
+    font-size: 20px;
+    margin-top: 10px;
+}
+  
+.stars {
+    cursor: pointer;
+    display: flex;
+    color: var(--app-white);
+    justify-content: center;
+    gap: 10px;
+    font-size: 20px;
+}
+
+button {
+    width: 155px;
+    height: 45px;
+    border-radius: 50px;
+    position: absolute;
+    top: 85%;
+    right: 3%;
+    color: var(--app-white);
+    background-color: #09580f;
+    font-size: 18px;
+    border-radius: 4px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0778057f;
+}
+
+
+
+.dialog {
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    height: 400px;
+    width: 400px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+}
+
+.dialog h2 {
+    font-size: 25px;
+    margin-bottom: 15px;
+    font-weight: 700;
+    margin-top: 10px;
+}
+  
+.dialog p {
+    font-size: 17px;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+
+
+  
